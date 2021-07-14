@@ -220,16 +220,25 @@
 }
 .footer__contacto {
     @include font-serif(1.25rem, 400, $cream);
-    text-align: center;
+    text-align: left;
     padding: 0;
     height: auto;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin: 1rem;
     @media all and (min-width: 768px) {
         font-size: 1.75rem;
     }
     @media all and (min-width: 992px) {
-        font-size: 1rem;
+        font-size: 1.25rem;
+    }
+}
+.footer__contacto--titulo {
+    margin-bottom: 2rem;
+    @include font-serif(1.5rem, 700, $cream);
+    @media all and (min-width: 768px) {
+        font-size: 2rem;
+    }
+    @media all and (min-width: 992px) {
+        font-size: 1.5rem;
     }
 }
 .footer__socialMedia {

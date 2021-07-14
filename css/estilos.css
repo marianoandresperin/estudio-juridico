@@ -369,11 +369,10 @@
   font-size: 1.25rem;
   font-weight: 400;
   color: #fff9ed;
-  text-align: center;
+  text-align: left;
   padding: 0;
   height: auto;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin: 1rem;
 }
 
 @media all and (min-width: 768px) {
@@ -384,7 +383,28 @@
 
 @media all and (min-width: 992px) {
   .footer__contacto {
-    font-size: 1rem;
+    font-size: 1.25rem;
+  }
+}
+
+.footer__contacto--titulo {
+  margin-bottom: 2rem;
+  /*fuente formal, weights 400 700*/
+  font-family: 'PT Serif', serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff9ed;
+}
+
+@media all and (min-width: 768px) {
+  .footer__contacto--titulo {
+    font-size: 2rem;
+  }
+}
+
+@media all and (min-width: 992px) {
+  .footer__contacto--titulo {
+    font-size: 1.5rem;
   }
 }
 
