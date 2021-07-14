@@ -1,0 +1,264 @@
+@import "_fonts.scss";
+@import "_colors.scss";
+
+.bg-main { /*bg sitio*/
+	background-color: $cream;
+}
+.bg-negro {
+	background-color: $black;
+}
+.header__navBar {
+    margin-right: 1rem;
+}
+.header__navBar--logo {
+    height: 2.5rem;
+    border: solid 0.5vh $gold;
+    border-style: inset;
+    box-sizing: border-box;
+    @media all and (min-width: 992px) {
+        height: 3rem;
+    }
+}
+.header__navBar--links {
+	@include font-sans(1.75rem, 300, $cream);
+    @media all and (min-width: 768px) {
+        font-size: 3rem;
+    }
+    @media all and (min-width: 992px) {
+        font-size: 2rem;
+    }
+}
+.banner {
+    background-image: url(../media/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 35vh;
+    justify-content: center;
+}
+.banner--titulo {
+    height: auto;
+    @include font-serif(3rem, 400, $cream);
+    background-image: none;
+    text-align: center;
+    @media all and (min-width: 768px) {
+        font-size: 4rem;
+    }
+    @media all and (min-width: 992px) {
+        font-size: 5rem;
+    }
+}
+.carousel {
+    margin-bottom: 3rem;
+}
+.carousel__contenedor {
+    @media all and (min-width: 992px) {
+        height: 92vh;
+    }
+}
+.carousel__texto {
+    bottom: 25%;
+}
+.carousel__texto--titulo {
+    @include font-serif(3rem, 700, $black);
+    text-shadow: 0px 0px 8px $cream;
+}
+.carousel__texto--pie {
+    @include font-serif(1.5rem, 700, $black);
+    text-shadow: 0px 0px 8px $cream;
+}
+.carousel__flechaSiguiente {
+    background-image: url("../media/right-arrow.svg");
+}
+.carousel__flechaAnterior {
+    background-image: url("../media/right-arrow.svg");
+    transform: rotate(180deg);
+}
+.carousel__indicador li {
+    background-color: $black;
+}
+.estudio {
+    background-image: url(../media/estudio.jpg);
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    min-height: 25vh;
+}
+.servicios {
+	grid-row-gap: 0.5rem;
+}
+.servicios__secciones {
+    min-height: 30vh;
+    padding: 0;
+}
+.servicios__secciones--asesoramiento {
+	background-image: url(../media/asesoramiento.jpg);
+	background-position-y: 35%;
+	background-size: cover;
+    @include font-serif(2.5rem, 700, $black);
+    text-shadow: 0px 0px 8px $cream;
+    @media all and (min-width: 768px) {
+        font-size: 4rem;
+        font-weight: 600;
+    }
+}
+.servicios__secciones--representacion {
+	background-image: url(../media/representacion.jpg);
+	background-position: center;
+	background-size: cover;
+    @include font-serif(2.5rem, 700, $black);
+    text-shadow: 0px 0px 8px $cream;
+    @media all and (min-width: 768px) {
+        font-size: 4rem;
+        font-weight: 600;
+    }
+}
+.servicios__secciones--defensa {
+	background-image: url(../media/defensa.jpg);
+	background-position: center;
+	background-size: cover;
+    @include font-serif(2.5rem, 700, $black);
+    text-shadow: 0px 0px 8px $cream;
+    @media all and (min-width: 768px) {
+        font-size: 4rem;
+    }
+}
+.parrafo {
+	@include font-serif(1.25rem, 400, $cream);
+	text-align: justify;
+    @media all and (min-width: 768px) {
+        font-size: 1.75rem;
+        padding: 1.5rem;
+    }
+    @media all and (min-width: 992px) {
+        font-size: 1.15rem;
+        padding: 2rem;
+    }
+}
+.equipo {
+    padding: 4rem;
+    margin: auto;
+}
+.equipo__video {
+	margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+	height: 300px;
+    @media all and (min-width: 768px) {
+        height: 400px;
+    }
+    @media all and (min-width: 992px) {
+        width: 80%;
+        height: 560px;
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
+}
+.clientes { 
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	box-sizing: border-box;    
+    @media all and (min-width: 992px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+.clientes__logos {
+    width: 50vw;
+    margin: 8vh;
+    @media all and (min-width: 992px) {
+        width: 12vw;
+    }
+}
+.clientes__logos:hover {
+    @media all and (min-width: 992px) {
+        transition: 1s;
+        transform: scale(1.2);
+    }
+}
+.contacto__formulario {
+    padding: 1.5rem;
+}
+.contacto__formulario--titulo {
+	text-align: center;
+	@include font-serif(1.2rem, 400, $cream);
+	margin: 1rem;
+    padding-left: 0;
+    padding-right: 0;
+    @media all and (min-width: 992px) {
+        font-size: 1.5rem;
+        margin: 1.5rem;
+    }
+}
+.contacto__formulario--inputs {
+    @include font-sans(1rem, 300, $cream);
+}
+.contacto__formulario--inputs:focus {
+    color: $black;
+    background-color: $cream;
+    border-color: $gold;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem $gold;
+}
+.contacto__formulario--enviar {
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+}
+.recibe {
+    min-height: 50vh;
+}
+.recibe__parrafo {
+    text-align: center;
+}
+.recibe__volver {
+	color: $gold;
+}
+.footer {
+	padding: 1rem;          
+}
+.footer__contacto {
+    @include font-serif(1.25rem, 400, $cream);
+    text-align: center;
+    padding: 0;
+    height: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    @media all and (min-width: 768px) {
+        font-size: 1.75rem;
+    }
+    @media all and (min-width: 992px) {
+        font-size: 1rem;
+    }
+}
+.footer__socialMedia {
+	display: flex;
+    flex-direction: row;
+    padding: 2vh;
+    text-decoration: none;
+    justify-content: space-evenly;
+    object-position: center;
+    @media all and (min-width: 992px) {
+        text-decoration: none;
+        flex-direction: column;
+        align-items: center;
+        flex: 1;
+        padding: 0;
+    }
+}
+.footer__socialMedia--icono {
+    height: 6vh;
+    @media all and (min-width: 992px) {
+        height: 3vh;
+        padding: 0;
+        padding-left: 2vw;
+        filter: grayscale(100%);
+    }
+}
+.footer__socialMedia--icono:hover {
+    @media all and (min-width: 992px) {
+        transition: 0.5s;
+        filter: grayscale(0%);
+    }
+}

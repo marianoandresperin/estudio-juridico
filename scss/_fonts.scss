@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&family=PT+Serif:wght@400;700&display=swap');
+
+
+@mixin font-serif($size, $weight, $color){ /*fuente formal, weights 400 700*/
+    font-family: 'PT Serif', serif;
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+}
+
+
+@mixin font-sans($size, $weight, $color){ /*fuente informal, weights 300 400 700*/
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+}
