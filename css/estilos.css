@@ -112,17 +112,44 @@
 }
 
 .carousel__flechaSiguiente {
-  background-image: url("../media/right-arrow.svg");
+  background-image: url("../media/arrow.png");
+}
+
+@media all and (min-width: 768px) {
+  .carousel__flechaSiguiente {
+    height: 40px;
+    width: 40px;
+  }
 }
 
 .carousel__flechaAnterior {
-  background-image: url("../media/right-arrow.svg");
+  background-image: url("../media/arrow.png");
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
 
+@media all and (min-width: 768px) {
+  .carousel__flechaAnterior {
+    height: 40px;
+    width: 40px;
+  }
+}
+
 .carousel__indicador li {
-  background-color: #1e1e1e;
+  background-image: url("../media/circle.png");
+  background-size: cover;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-clip: border-box;
+  height: 18px;
+  width: 18px;
+}
+
+@media all and (min-width: 768px) {
+  .carousel__indicador li {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 .estudio {
@@ -141,7 +168,6 @@
 
 .servicios__secciones {
   min-height: 30vh;
-  padding: 0;
 }
 
 .servicios__secciones--asesoramiento {
@@ -330,7 +356,7 @@
   font-family: 'Noto Sans JP', sans-serif;
   font-size: 1rem;
   font-weight: 300;
-  color: #fff9ed;
+  color: #1e1e1e;
 }
 
 .contacto__formulario--inputs:focus {
@@ -389,6 +415,7 @@
 
 .footer__contacto--titulo {
   margin-bottom: 2rem;
+  letter-spacing: 0.1rem;
   /*fuente formal, weights 400 700*/
   font-family: 'PT Serif', serif;
   font-size: 1.5rem;

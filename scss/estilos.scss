@@ -67,14 +67,32 @@
     text-shadow: 0px 0px 8px $cream;
 }
 .carousel__flechaSiguiente {
-    background-image: url("../media/right-arrow.svg");
+    background-image: url("../media/arrow.png");
+    @media all and (min-width: 768px) {
+        height: 40px;
+        width: 40px;
+    }
 }
 .carousel__flechaAnterior {
-    background-image: url("../media/right-arrow.svg");
+    background-image: url("../media/arrow.png");
     transform: rotate(180deg);
+    @media all and (min-width: 768px) {
+        height: 40px;
+        width: 40px;
+    }
 }
 .carousel__indicador li {
-    background-color: $black;
+    background-image: url("../media/circle.png");
+    background-size: cover;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    height: 18px;
+    width: 18px;
+    @media all and (min-width: 768px) {
+        width: 24px;
+        height: 24px;
+    }
 }
 .estudio {
     background-image: url(../media/estudio.jpg);
@@ -88,7 +106,6 @@
 }
 .servicios__secciones {
     min-height: 30vh;
-    padding: 0;
 }
 .servicios__secciones--asesoramiento {
 	background-image: url(../media/asesoramiento.jpg);
@@ -193,7 +210,7 @@
     }
 }
 .contacto__formulario--inputs {
-    @include font-sans(1rem, 300, $cream);
+    @include font-sans(1rem, 300, $black);
 }
 .contacto__formulario--inputs:focus {
     color: $black;
@@ -233,6 +250,7 @@
 }
 .footer__contacto--titulo {
     margin-bottom: 2rem;
+    letter-spacing: 0.1rem;
     @include font-serif(1.5rem, 700, $cream);
     @media all and (min-width: 768px) {
         font-size: 2rem;
