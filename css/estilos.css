@@ -458,9 +458,8 @@
           flex-direction: row;
   padding: 2vh;
   text-decoration: none;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -o-object-position: center;
      object-position: center;
 }
@@ -479,6 +478,9 @@
         -ms-flex: 1;
             flex: 1;
     padding: 0;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
 }
 

@@ -273,7 +273,7 @@
     flex-direction: row;
     padding: 2vh;
     text-decoration: none;
-    justify-content: space-evenly;
+    justify-content: space-around;
     object-position: center;
     @media all and (min-width: 992px) {
         text-decoration: none;
@@ -281,6 +281,7 @@
         align-items: center;
         flex: 1;
         padding: 0;
+        justify-content: space-evenly;
     }
 }
 .footer__socialMedia--icono {
