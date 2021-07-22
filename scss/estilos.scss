@@ -101,6 +101,20 @@
     justify-content: center;
     min-height: 25vh;
 }
+.parrafo {
+	@include font-serif(1.25rem, 400, $cream);
+	text-align: justify;
+    margin-top: 2rem;
+    padding-bottom: 5rem;
+@media all and (min-width: 768px) {
+        font-size: 1.75rem;
+    }
+    @media all and (min-width: 992px) {
+        font-size: 1.15rem;
+        padding: 2rem;
+        line-height: 2rem;
+    }
+}
 .servicios {
 	/*grid-row-gap: 1rem;*/
     padding: 1rem;
@@ -147,34 +161,40 @@
         font-size: 4rem;
     }
 }
-.parrafo {
-	@include font-serif(1.25rem, 400, $cream);
-	text-align: justify;
-    @media all and (min-width: 768px) {
-        font-size: 1.75rem;
-        padding: 1.5rem;
-    }
-    @media all and (min-width: 992px) {
-        font-size: 1.15rem;
-        padding: 2rem;
-        line-height: 2rem;
-    }
-}
 .equipo {
-    padding: 4rem;
-    margin: auto;
+    padding: 2rem 0 2rem 0;
+    margin: 1rem;
+    @media all and (min-width: 992px) {
+        padding: 4rem;
+    }
 }
 .equipo__integrantes {
     min-height: 20rem;
-    margin: 0 0 3rem 0;
+    margin-bottom: 1rem;
     @media all and (min-width: 768px) {
-        margin: 0 2rem 0 2rem;
+        margin: 0;
     }
     @media all and (min-width: 992px) {
         min-height: 30vh;
         padding: 1rem;
         line-height: 2rem;
         margin: 0 0 2rem 0;
+    }
+}
+.equipo__integrantes--parrafo {
+	@include font-serif(1.25rem, 400, $cream);
+	text-align: justify;
+    margin-top: 2rem;
+    padding-bottom: 5rem;
+    border-bottom: 0.2rem solid $gold;
+    border-radius: 3px;
+    @media all and (min-width: 768px) {
+        font-size: 1.75rem;
+    }
+    @media all and (min-width: 992px) {
+        font-size: 1.15rem;
+        padding: 2rem;
+        line-height: 2rem;
     }
 }
 .equipo__integrantes--phyllis {
@@ -378,7 +398,7 @@
 .footer__contacto--titulo {
     margin-bottom: 2rem;
     letter-spacing: 0.1rem;
-    @include font-serif(1.5rem, 700, $cream);
+    @include font-serif(1.5rem, 700, $gold);
     @media all and (min-width: 768px) {
         font-size: 2rem;
     }
