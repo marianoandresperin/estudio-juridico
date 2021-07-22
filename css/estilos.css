@@ -204,6 +204,8 @@
   .servicios__secciones--parrafo {
     padding: 1rem;
     line-height: 2rem;
+    border-bottom: 0.2rem solid #ab8f1e;
+    border-radius: 3px;
   }
 }
 
@@ -621,6 +623,19 @@
 .contacto__formulario--enviar {
   margin-bottom: 1.5rem;
   margin-top: 1.5rem;
+  /*fuente informal, weights 300 400 700*/
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #fff9ed;
+  background-color: #ab8f1e;
+  border-color: #ab8f1e;
+}
+
+.contacto__formulario--enviar:hover {
+  background-color: #8c7517;
+  border-color: #8c7517;
+  color: #fff9ed;
 }
 
 .recibe {
@@ -633,6 +648,14 @@
 
 .recibe__volver {
   color: #ab8f1e;
+}
+
+.recibe__volver:hover {
+  color: #fff9ed;
+}
+
+.recibe__voler:active {
+  color: #fff9ed;
 }
 
 .footer {
