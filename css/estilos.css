@@ -36,13 +36,13 @@
 
 @media all and (min-width: 768px) {
   .header__navBar--links {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 }
 
 @media all and (min-width: 992px) {
   .header__navBar--links {
-    font-size: 2rem;
+    font-size: 1.25rem;
   }
 }
 
@@ -175,7 +175,7 @@
 
 @media all and (min-width: 768px) {
   .parrafo {
-    font-size: 1.75rem;
+    padding-bottom: 1rem;
   }
 }
 
@@ -188,7 +188,6 @@
 }
 
 .servicios {
-  /*grid-row-gap: 1rem;*/
   padding: 1rem;
 }
 
@@ -311,7 +310,7 @@
 
 @media all and (min-width: 768px) {
   .equipo__integrantes--parrafo {
-    font-size: 1.75rem;
+    padding-bottom: 1rem;
   }
 }
 
@@ -581,7 +580,10 @@
 }
 
 .contacto__formulario {
-  padding: 1.5rem;
+  padding: 2rem 0 2rem 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .contacto__formulario--titulo {
@@ -609,6 +611,7 @@
   font-size: 1rem;
   font-weight: 300;
   color: #1e1e1e;
+  resize: none;
 }
 
 .contacto__formulario--inputs:focus {
@@ -674,20 +677,14 @@
   margin: 0.5rem;
 }
 
-@media all and (min-width: 768px) {
-  .footer__contacto {
-    font-size: 1.75rem;
-  }
-}
-
 @media all and (min-width: 992px) {
   .footer__contacto {
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
 }
 
 .footer__contacto--titulo {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   letter-spacing: 0.1rem;
   /*fuente formal, weights 400 700*/
   font-family: 'PT Serif', serif;
@@ -696,15 +693,9 @@
   color: #ab8f1e;
 }
 
-@media all and (min-width: 768px) {
-  .footer__contacto--titulo {
-    font-size: 2rem;
-  }
-}
-
 @media all and (min-width: 992px) {
   .footer__contacto--titulo {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 }
 

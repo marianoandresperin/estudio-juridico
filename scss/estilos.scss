@@ -22,10 +22,10 @@
 .header__navBar--links {
 	@include font-sans(1.75rem, 300, $cream);
     @media all and (min-width: 768px) {
-        font-size: 3rem;
+        font-size: 2rem;
     }
     @media all and (min-width: 992px) {
-        font-size: 2rem;
+        font-size: 1.25rem;
     }
 }
 .banner {
@@ -107,7 +107,7 @@
     margin-top: 2rem;
     padding-bottom: 5rem;
 @media all and (min-width: 768px) {
-        font-size: 1.75rem;
+        padding-bottom: 1rem;
     }
     @media all and (min-width: 992px) {
         font-size: 1.15rem;
@@ -116,7 +116,6 @@
     }
 }
 .servicios {
-	/*grid-row-gap: 1rem;*/
     padding: 1rem;
 }
 .servicios__secciones {
@@ -191,7 +190,7 @@
     border-bottom: 0.2rem solid $gold;
     border-radius: 3px;
     @media all and (min-width: 768px) {
-        font-size: 1.75rem;
+        padding-bottom: 1rem;
     }
     @media all and (min-width: 992px) {
         font-size: 1.15rem;
@@ -345,7 +344,8 @@
     }
 }
 .contacto__formulario {
-    padding: 1.5rem;
+    padding: 2rem 0 2rem 0;
+    justify-content: center;
 }
 .contacto__formulario--titulo {
 	text-align: center;
@@ -360,6 +360,7 @@
 }
 .contacto__formulario--inputs {
     @include font-sans(1rem, 300, $black);
+    resize: none;
 }
 .contacto__formulario--inputs:focus {
     color: $black;
@@ -405,21 +406,21 @@
     height: auto;
     margin: 0.5rem;
     @media all and (min-width: 768px) {
-        font-size: 1.75rem;
+
     }
     @media all and (min-width: 992px) {
-        font-size: 1.25rem;
+        font-size: 1rem;
     }
 }
 .footer__contacto--titulo {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     letter-spacing: 0.1rem;
     @include font-serif(1.5rem, 700, $gold);
     @media all and (min-width: 768px) {
-        font-size: 2rem;
+
     }
     @media all and (min-width: 992px) {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
 }
 .footer__socialMedia {
