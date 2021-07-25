@@ -1,0 +1,77 @@
+[33mcommit 0a03fe61f9fdca1bab84681c4b77e46ea335f4b4[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/animacion[m[33m, [m[1;32manimacion[m[33m)[m
+Author: Mariano Perin <mariano.perin@gmail.com>
+Date:   Sun Jul 25 17:09:12 2021 -0300
+
+    agregado de animaciones y contenido
+
+[33mcommit 7634e7e9fea8c368e8584d7798ac3ef73d1e2a49[m
+Author: Mariano Perin <mariano.perin@gmail.com>
+Date:   Sat Jul 24 18:38:54 2021 -0300
+
+    modificaciones generales
+
+[33mcommit 46cc243a01775b98e8dbdc424d747582579b538c[m[33m ([m[1;31morigin/nuevoEquipo[m[33m)[m
+Author: Mariano Perin <mariano.perin@gmail.com>
+Date:   Thu Jul 22 04:24:41 2021 -0300
+
+    agregado borde a servicios y personalizacion del formulariod e contacto
+
+[33mcommit fad5a7ec8cf572e39df080f92fe1cec1f2658b4c[m
+Author: Mariano Perin <mariano.perin@gmail.com>
+Date:   Thu Jul 22 02:24:38 2021 -0300
+
+    nuevo layout de seccion equipo
+
+[33mcommit 64efe2147e79fa26875fa183b3ceaa76140d0525[m
+Author: Mariano Perin <mariano.perin@gmail.com>
+Date:   Mon Jul 19 17:24:03 2021 -0300
+
+    cambio de algunas imagenes
+
+[33mcommit 9ae56461a46a54c052456da389be9f65bdccced0[m
+Author: Mariano Perin <mariano.perin@gmail.com>
+Date:   Mon Jul 19 16:56:23 2021 -0300
+
+    integrantes del estudio agregados
+
+[33mcommit 7d5b0ab7995fdc9c3b5a4cfa82b4fda940692707[m
+Author: Mariano Perin <mariano.perin@gmail.com>
+Date:   Mon Jul 19 13:48:57 2021 -0300
+
+    agregado youtube a socialMedia y cambio de layout del footer en mobile y tablet
+
+[33mcommit 398fae12f48dedbc83a06cf95858f8c86246d30c[m
+Author: Mariano Perin <mariano.perin@gmail.com>
+Date:   Fri Jul 16 21:55:35 2021 -0300
+
+    agregado padding a servicios en desktop
+
+[33mcommit e5212bc4a561ced0cab38ce726d15ab9af4746ac[m
+Author: Mariano Perin <mariano.perin@gmail.com>
+Date:   Fri Jul 16 21:29:43 2021 -0300
+
+    limpieza de imagenes
+
+[33mcommit 126ed0d4a553b4ff7807b5860e8b89ea063e5dd8[m
+Author: Mariano Perin <mariano.perin@gmail.com>
+Date:   Fri Jul 16 21:18:41 2021 -0300
+
+    modificacion sintaxis por seo, margin de servicios y botones del carousel
+
+[33mcommit a163752b317e9a56121184cd74ae24e0eb8b9ec1[m
+Author: Mariano Perin <mariano.perin@gmail.com>
+Date:   Wed Jul 14 16:26:46 2021 -0300
+
+    corregido margin del footer
+
+[33mcommit 3b9576ac27c14197055d57f9f163de72650e9d9a[m
+Author: Mariano Perin <mariano.perin@gmail.com>
+Date:   Wed Jul 14 16:18:40 2021 -0300
+
+    agregado subtitulo contacto en footer
+
+[33mcommit f11680ba32d237d8985bfe2471fa4915751f8884[m
+Author: Mariano Perin <mariano.perin@gmail.com>
+Date:   Wed Jul 14 15:43:59 2021 -0300
+
+    initial commit
