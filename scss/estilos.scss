@@ -8,7 +8,11 @@
 	background-color: $black;
 }
 .header__navBar {
-    margin-right: 1rem;
+    flex-flow: column;
+    a {
+        margin-right: 0.5rem;
+        margin-left: 0.5rem;
+    }
 }
 .header__navBar--logo {
     height: 2.5rem;

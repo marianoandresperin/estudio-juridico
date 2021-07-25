@@ -9,7 +9,15 @@
 }
 
 .header__navBar {
-  margin-right: 1rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.header__navBar a {
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
 }
 
 .header__navBar--logo {
