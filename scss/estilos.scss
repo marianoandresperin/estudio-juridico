@@ -105,8 +105,8 @@
 	@include font-serif(1.25rem, 400, $cream);
 	text-align: justify;
     margin-top: 2rem;
-    padding-bottom: 5rem;
-@media all and (min-width: 768px) {
+    padding-bottom: 1rem;
+    @media all and (min-width: 768px) {
         padding-bottom: 1rem;
     }
     @media all and (min-width: 992px) {
@@ -120,10 +120,12 @@
 }
 .servicios__secciones {
     min-height: 30vh;
+    margin: 0;
 }
 .servicios__secciones--parrafo {
-    margin: 0;
+    margin: 1.5rem 0 1.5rem 0;
     @media all and (min-width: 992px) {
+        margin: 0;
         padding: 1rem;
         line-height: 2rem;
         border-bottom: 0.2rem solid $gold;
@@ -172,6 +174,7 @@
 .equipo__integrantes {
     min-height: 20rem;
     margin-bottom: 1rem;
+    border: none;
     @media all and (min-width: 768px) {
         margin: 0;
     }
@@ -304,20 +307,6 @@
         margin: 0 0 2rem 0;
     }
 }
-.equipo__video {
-	margin-top: 1rem;
-    margin-bottom: 1rem;
-    width: 100%;
-	height: 300px;
-    @media all and (min-width: 768px) {
-        height: 400px;
-    }
-    @media all and (min-width: 992px) {
-        height: 560px;
-        margin-top: 2.5rem;
-        margin-bottom: 2.5rem;
-    }
-}
 .clientes { 
 	display: flex;
 	flex-direction: column;
@@ -393,7 +382,7 @@
 .recibe__volver:hover {
     color: $cream;
 }
-.recibe__voler:active {
+.recibe__volver:active {
     color: $cream;
 }
 .footer {
