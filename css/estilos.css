@@ -562,8 +562,8 @@
 
 @media all and (min-width: 992px) {
   .clientes__logos:hover {
-    -webkit-transition: 1s;
-    transition: 1s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
     -webkit-transform: scale(1.2);
             transform: scale(1.2);
   }
@@ -741,8 +741,10 @@
 
 @media all and (min-width: 992px) {
   .footer__socialMedia--icono:hover {
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
+    -webkit-transition-timing-function: ease-in;
+            transition-timing-function: ease-in;
+    -webkit-transition: 0.25s;
+    transition: 0.25s;
     -webkit-filter: grayscale(0%);
             filter: grayscale(0%);
   }

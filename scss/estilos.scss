@@ -332,7 +332,7 @@
 }
 .clientes__logos:hover {
     @media all and (min-width: 992px) {
-        transition: 1s;
+        transition: 0.5s;
         transform: scale(1.2);
     }
 }
@@ -443,7 +443,8 @@
 }
 .footer__socialMedia--icono:hover {
     @media all and (min-width: 992px) {
-        transition: 0.5s;
+        transition-timing-function: ease-in;
+        transition: 0.25s;
         filter: grayscale(0%);
     }
 }
