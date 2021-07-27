@@ -193,9 +193,7 @@
 	@include font-serif(1.25rem, 400, $cream);
 	text-align: justify;
     margin-top: 2rem;
-    padding-bottom: 5rem;
-    border-bottom: 0.2rem solid $gold;
-    border-radius: 3px;
+    padding-bottom: 3rem;
     @media all and (min-width: 768px) {
         padding-bottom: 1rem;
     }
@@ -203,6 +201,8 @@
         font-size: 1.15rem;
         padding: 2rem;
         line-height: 2rem;
+        border-bottom: 0.2rem solid $gold;
+        border-radius: 3px;
     }
 }
 .equipo__integrantes--phyllis {
@@ -394,13 +394,10 @@
 }
 .footer__contacto {
     @include font-serif(1.25rem, 400, $cream);
-    text-align: left;
+    text-align: center;
     padding: 0;
     height: auto;
     margin: 0.5rem;
-    @media all and (min-width: 768px) {
-
-    }
     @media all and (min-width: 992px) {
         font-size: 1rem;
     }
@@ -409,9 +406,7 @@
     margin-bottom: 1.5rem;
     letter-spacing: 0.1rem;
     @include font-serif(1.5rem, 700, $gold);
-    @media all and (min-width: 768px) {
-
-    }
+    text-align: center;
     @media all and (min-width: 992px) {
         font-size: 1.25rem;
     }
