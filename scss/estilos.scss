@@ -16,7 +16,7 @@
 }
 .header__navBar--logo {
     height: 2.5rem;
-    border: solid 0.5vh $gold;
+    border: solid 0.3rem $gold;
     border-style: inset;
     box-sizing: border-box;
     @media all and (min-width: 992px) {
@@ -393,11 +393,14 @@
 	padding: 1rem;          
 }
 .footer__contacto {
-    @include font-serif(1.25rem, 400, $cream);
-    text-align: center;
+    @include font-serif(1.2rem, 400, $cream);
+    text-align: left;
     padding: 0;
     height: auto;
-    margin: 0.5rem;
+    margin: 0.5rem 0 0.5rem 0;
+    @media all and (min-width: 768px) {
+        font-size: 1.25rem;
+    }
     @media all and (min-width: 992px) {
         font-size: 1rem;
     }
@@ -406,7 +409,7 @@
     margin-bottom: 1.5rem;
     letter-spacing: 0.1rem;
     @include font-serif(1.5rem, 700, $gold);
-    text-align: center;
+    text-align: left;
     @media all and (min-width: 992px) {
         font-size: 1.25rem;
     }
@@ -414,25 +417,17 @@
 .footer__socialMedia {
 	display: flex;
     flex-direction: row;
-    padding: 2vh;
+    padding-top: 2rem;
     text-decoration: none;
-    justify-content: space-around;
-    object-position: center;
-    @media all and (min-width: 992px) {
-        text-decoration: none;
-        flex-direction: column;
-        align-items: center;
-        flex: 1;
-        padding: 0;
-        justify-content: space-evenly;
-    }
+    justify-content: space-between;
 }
 .footer__socialMedia--icono {
-    height: 6vh;
+    height: 2.5rem;
+    @media all and (min-width: 768px) {
+        height: 2.25rem;
+    }
     @media all and (min-width: 992px) {
-        height: 3vh;
-        padding: 0;
-        padding-left: 2vw;
+        height: 2rem;
         filter: grayscale(100%);
     }
 }
@@ -442,4 +437,15 @@
         transition: 0.25s;
         filter: grayscale(0%);
     }
+}
+.footer__mapa {
+    /*width: 100%;*/
+    display: none;
+    @media all and (min-width: 768px) {
+        display: block;
+    }
+}
+.footer__mapa--iframe {
+    width: 100%;
+    height: 100%;
 }

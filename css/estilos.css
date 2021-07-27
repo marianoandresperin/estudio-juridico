@@ -22,7 +22,7 @@
 
 .header__navBar--logo {
   height: 2.5rem;
-  border: solid 0.5vh #ab8f1e;
+  border: solid 0.3rem #ab8f1e;
   border-style: inset;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -658,13 +658,19 @@
 .footer__contacto {
   /*fuente formal, weights 400 700*/
   font-family: 'PT Serif', serif;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   font-weight: 400;
   color: #fff9ed;
-  text-align: center;
+  text-align: left;
   padding: 0;
   height: auto;
-  margin: 0.5rem;
+  margin: 0.5rem 0 0.5rem 0;
+}
+
+@media all and (min-width: 768px) {
+  .footer__contacto {
+    font-size: 1.25rem;
+  }
 }
 
 @media all and (min-width: 992px) {
@@ -681,7 +687,7 @@
   font-size: 1.5rem;
   font-weight: 700;
   color: #ab8f1e;
-  text-align: center;
+  text-align: left;
 }
 
 @media all and (min-width: 992px) {
@@ -698,43 +704,26 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding: 2vh;
+  padding-top: 2rem;
   text-decoration: none;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -o-object-position: center;
-     object-position: center;
-}
-
-@media all and (min-width: 992px) {
-  .footer__socialMedia {
-    text-decoration: none;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-    padding: 0;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-  }
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .footer__socialMedia--icono {
-  height: 6vh;
+  height: 2.5rem;
+}
+
+@media all and (min-width: 768px) {
+  .footer__socialMedia--icono {
+    height: 2.25rem;
+  }
 }
 
 @media all and (min-width: 992px) {
   .footer__socialMedia--icono {
-    height: 3vh;
-    padding: 0;
-    padding-left: 2vw;
+    height: 2rem;
     -webkit-filter: grayscale(100%);
             filter: grayscale(100%);
   }
@@ -749,5 +738,21 @@
     -webkit-filter: grayscale(0%);
             filter: grayscale(0%);
   }
+}
+
+.footer__mapa {
+  /*width: 100%;*/
+  display: none;
+}
+
+@media all and (min-width: 768px) {
+  .footer__mapa {
+    display: block;
+  }
+}
+
+.footer__mapa--iframe {
+  width: 100%;
+  height: 100%;
 }
 /*# sourceMappingURL=estilos.css.map */
